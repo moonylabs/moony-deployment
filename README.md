@@ -1,27 +1,41 @@
-# Open Code Protocol Server
+# Moony Deployment Test
 
-[![Release](https://img.shields.io/github/v/release/code-payments/ocp-server.svg)](https://github.com/code-payments/ocp-server/releases/latest)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/code-payments/ocp-server)](https://pkg.go.dev/github.com/code-payments/ocp-server)
-[![Tests](https://github.com/code-payments/ocp-server/actions/workflows/test.yml/badge.svg)](https://github.com/code-payments/ocp-server/actions/workflows/test.yml)
-[![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/code-payments/ocp-server/blob/main/LICENSE.md)
+[![Moony](https://img.shields.io/badge/Moony-Deployment%20Test-blue)](https://moonylabs.com)
+[![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go)](https://go.dev/)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](LICENSE.md)
 
-Open Code Protocol server monolith containing the gRPC/web services and workers that power next-generation currency launchpad and payment systems. The project contains the first L2 solution on top of Solana, utilizing an intent-based system backed by a sequencer to handle transactions.
+This repository is a live mirror of the [Open Code Protocol (OCP) server](https://github.com/code-payments/ocp-server) maintained by [Moony Labs](https://moonylabs.com) for testing and deploying Moony's infrastructure.
 
-## What is Flipcash?
+## About Moony
 
-[Flipcash](https://flipcash.com) is a self-custodial mobile wallet app leveraging the Open Code Protocol to provide a seamless multi-currency payments experience.
+[Moony](https://moonylabs.com) is a decentralized digital asset deployed on the Solana blockchain, designed to facilitate permissionless transactions without intermediaries. All issuance is governed by an immutable smart contract that eliminates discretionary control and enables open participation in internet capital markets.
+
+**Learn more:** [Documentation](https://moonylabs.com/docs) | [Website](https://moonylabs.com)
+
+## Repository Purpose
+
+This repository serves as a deployment mirror of the OCP server codebase, specifically configured for testing Moony's deployment infrastructure. The codebase is synced from the upstream [code-payments/ocp-server](https://github.com/code-payments/ocp-server) repository to ensure Moony's deployment uses the latest stable OCP server implementation.
+
+**Note:** This repository is currently configured for testing using "Jeffy" addresses. Production deployments will use the official Moony contract addresses.
+
+## What is the Open Code Protocol?
+
+The Open Code Protocol (OCP) is a next-generation currency launchpad and payment system built on Solana. It provides the first L2 solution on top of Solana, utilizing an intent-based system backed by a sequencer to handle transactions.
+
+The OCP server is a monolith containing gRPC/web services and workers that power currency deployment, payment processing, and transaction sequencing.
 
 ## Quick Start
 
-1. Install Go. See the [official documentation](https://go.dev/doc/install).
+1. **Install Go.** See the [official documentation](https://go.dev/doc/install).
 
-2. Download the source code.
+2. **Clone this repository:**
 
 ```bash
-git clone git@github.com:code-payments/ocp-server.git
+git clone https://github.com/moonylabs/moony-deployment-test.git
+cd moony-deployment-test
 ```
 
-3. Run the test suite:
+3. **Run the test suite:**
 
 ```bash
 make test
@@ -29,7 +43,7 @@ make test
 
 ## Project Structure
 
-The implementations powering the Open Code Protocol (Intent System, Sequencer, etc) can be found int the `ocp/` package. All other packages are generic libraries and utilities.
+The implementations powering the Open Code Protocol (Intent System, Sequencer, etc) can be found in the `ocp/` package. All other packages are generic libraries and utilities.
 
 To begin diving into core systems, we recommend starting with the following packages:
 - `ocp/rpc/`: gRPC and web service implementations
@@ -41,10 +55,18 @@ The gRPC APIs provided by the Open Code Protocol server can be found in the [ocp
 
 ## Contributing
 
-Anyone is welcome to make code contributions through a PR.
+This repository mirrors the upstream OCP server. For contributions to the core OCP server codebase, please contribute to the [upstream repository](https://github.com/code-payments/ocp-server).
 
-This will evolve as we continue to build out the platform and open up more ways to contribute.
+For Moony-specific deployment configurations or documentation, contributions are welcome through pull requests.
 
-## Getting Help
+## Upstream
 
-If you have any additional questions or need help integrating Flipcash into your website or application, please reach out to us on [Twitter](https://twitter.com/flipcash).
+This repository is synced from the upstream [code-payments/ocp-server](https://github.com/code-payments/ocp-server) repository. The commit history reflects the upstream development, ensuring Moony's deployment infrastructure stays current with the latest OCP server improvements.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+**Moony Labs** | [Website](https://moonylabs.com) | [Documentation](https://moonylabs.com/docs) | [GitHub](https://github.com/moonylabs)
