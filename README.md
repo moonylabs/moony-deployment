@@ -39,30 +39,6 @@ The deployment infrastructure includes:
 - **Currency Workers** - Background services managing token issuance, reserves, and redemptions
 - **Account Management** - User account creation and key management systems
 
-## Quick Start
-
-### Prerequisites
-
-1. **Install Go 1.21+** - See the [official documentation](https://go.dev/doc/install)
-2. **Solana CLI** - Required for on-chain interactions (see [Solana docs](https://docs.solana.com/cli/install-solana-cli-tools))
-
-### Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/moonylabs/moony-deployment-test.git
-cd moony-deployment-test
-
-# Install dependencies
-go mod download
-
-# Run tests
-make test
-```
-
-### Configuration
-
-Configure your deployment by setting environment variables or modifying configuration files in the `config/` directory. See the [OCP documentation](https://github.com/code-payments/ocp-server) for detailed configuration options.
 
 ## Project Structure
 
