@@ -87,7 +87,9 @@ This repository is synced from the upstream [code-payments/ocp-server](https://g
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This repository is a read-only mirror maintained for archival and attribution purposes. The codebase is synced from the upstream [code-payments/ocp-server](https://github.com/code-payments/ocp-server) repository, which is licensed under the MIT License. 
+
+For licensing information, please refer to the [upstream repository's LICENSE](https://github.com/code-payments/ocp-server/blob/main/LICENSE.md). This mirror repository does not constitute a derivative work and is maintained solely to document the OCP server codebase that was used for Moony's deployment and to provide attribution to Moony Labs, LLC.
 
 ---
 
